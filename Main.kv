@@ -1,0 +1,14 @@
+#: import rnd random
+MainScreen:
+
+<MainScreen>:
+    Button:
+        size_hint: None, None
+        text: "Click me"
+        size: "100dp", "50dp"
+        center: self.parent.width / 2, self.parent.height / 5
+        on_press: self.parent.on_press_button()
+<Ball>:
+    canvas:
+        Color:
+            rgb: rnd.random(), rnd.random(), rnd.random()
